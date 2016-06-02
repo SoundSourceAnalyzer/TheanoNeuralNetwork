@@ -46,12 +46,8 @@ nn.add(LSTM(32, input_shape=(10, 64)))
 nn.compile(loss='binary_crossentropy',
            optimizer='adam',
            metrics=['accuracy'])
-# wtf= numpy.array(train_features[0])
-numpy.vstack(train_features[0])
-# train_features =
-train_labels = numpy.asarray(train_features[0])
 
-# nn.fit(train_features, train_labels, batch_size=batch_size, nb_epoch=nb_epoch)
+nn.fit(train_features, train_labels, batch_size=batch_size, nb_epoch=nb_epoch)
 
 # plot(nn, to_file='output.png', show_shapes='true')
 
